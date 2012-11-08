@@ -7,14 +7,17 @@ public:
 	Patient(void);
 	~Patient(void);
 	int getAge();
-	void setAge(int);
 	std::string getEmergc();
+	std::string getDoc();
+	void setAge(int);
 	void setEmergc(std::string);
+	void setDoc(std::string);
 	std::string toStr();
 
 private:
 	int age;
 	std::string emergc;
+	std::string doc;
 
 };
 

@@ -1,3 +1,5 @@
+
+
 #include "stdafx.h"
 #include "Doctor.h"
 
@@ -24,3 +26,4 @@ std::string Doctor::toStr()
 	std::string out;
 	return out;
 }
+

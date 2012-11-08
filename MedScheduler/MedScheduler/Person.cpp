@@ -1,3 +1,4 @@
+
 #include "stdafx.h"
 #include "Person.h"
 
@@ -32,3 +33,4 @@ std::string Person::toStr()
 	std::string out;
 	return out;
 }
+

@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Doctor.h" />
+    <ClInclude Include="fileHandler.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="node.h" />
     <ClInclude Include="Patient.h" />
@@ -90,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Doctor.cpp" />
+    <ClCompile Include="fileHandler.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="MedScheduler.cpp" />
     <ClCompile Include="Patient.cpp" />

@@ -1,6 +1,7 @@
+
+
 #include "stdafx.h"
 #include "Patient.h"
-#include "LinkedList.h"
 #include "Queue.h"
 
 
@@ -36,3 +37,4 @@ Patient Queue::popQ()
 		throw new std::string("The Queue is empty!");
 	}
 }
+

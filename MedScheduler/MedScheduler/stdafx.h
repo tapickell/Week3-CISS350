@@ -16,6 +16,7 @@
 #include <string>
 #include <sstream>
 #include <vector>
+#include <array>
 
 
 // TODO: reference additional headers your program requires here

@@ -1,3 +1,5 @@
+
+
 #include "stdafx.h"
 #include "Patient.h"
 #include "LinkedList.h"
@@ -178,3 +180,5 @@ int LinkedList::operator+= (Patient client)
 {
 	return add(client);
 }
+
+
