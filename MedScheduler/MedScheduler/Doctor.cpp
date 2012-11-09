@@ -8,6 +8,12 @@ Doctor::Doctor(void)
 {
 }
 
+Doctor::Doctor(std::string str1, int num, std::string str2)
+{
+	Person::setName(str1);
+	Person::setCode(str2);
+	setRoom(num);
+}
 
 Doctor::~Doctor(void)
 {

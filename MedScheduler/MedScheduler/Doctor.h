@@ -5,6 +5,7 @@ class Doctor :
 {
 public:
 	Doctor(void);
+	Doctor(std::string, int, std::string);
 	~Doctor(void);
 	int getRoom();
 	void setRoom(int);

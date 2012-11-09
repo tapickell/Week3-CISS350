@@ -15,13 +15,16 @@ using namespace std;
 void tout(string);
 void errout(string);
 vector<string> split_by_whitespace(string);
+bool checkForAlpha(string);
+bool checkForNum(string);
+bool checkForCode(string);
 
 int _tmain(int argc, _TCHAR* argv[])
 {
 	//array of 100 exam rooms
 	Room rooms[100];
 	//list to hold doctors
-	LinkedList DocsIn;
+	vector<Doctor> DocsIn;
 
 	//transaction file handle
 	fileHandler tfile("trans.out");
@@ -80,8 +83,29 @@ int _tmain(int argc, _TCHAR* argv[])
 							tout("doctor_name room_number medical_code");
 							getline(cin, docInfo);
 							docInfoStack = split_by_whitespace(docInfo);
+							stringstream greet;
+							greet << "Attempting to login Doctor " << docInfoStack[0] << " " << docInfoStack[2];
 							//input validation
-							//if room in use kickout msg
+							if (checkForAlpha(docInfoStack[0]) && checkForNum(docInfoStack[1]) && checkForCode(docInfoStack[2]))
+							{
+								if (atoi(docInfoStack[1].c_str()) > 0 && atoi(docInfoStack[1].c_str()) < 101)
+								{
+									//room number is array index +1
+									int x = atoi(docInfoStack[1].c_str());
+									//check if room is free
+									if (!rooms[x+1].roomInUse())
+									{
+										//assign room to doctor
+										DocsIn.push_back(Doctor(docInfoStack[0], x, docInfoStack[2]));
+										stringstream assign;
+										assign << "Doctor " << docInfoStack[0] << " has been assignd to room number " << docInfoStack[1];
+										tout(assign.str());
+
+									} else {
+										//if room in use kickout msg
+									}
+									}//else throw error
+							} //else throw error
 						} else if (entry[1] == out) //if "O"
 						{
 		
@@ -91,9 +115,13 @@ int _tmain(int argc, _TCHAR* argv[])
 							tout("Enter Doctor name: ");
 							getline(cin, docName);
 							docNameStack = split_by_whitespace(docName);
+							stringstream goodbye;
+							goodbye << "Attempting to logout Doctor " << docNameStack[0];
 							//input validation
-							//free room
-							//if patients in Q assign to other docs
+							if (checkForAlpha(docNameStack[0]))							{
+								//free room
+								//if patients in Q assign to other docs
+							}
 						} else {
 							throw InvalidEntryError();
 						}
@@ -186,4 +214,42 @@ vector<string> split_by_whitespace(string myStr)
 		result.push_back( myStr.substr( j, myStr.size() - j ));
 	}
 	return result;
+}
+
+bool checkForAlpha(string str)
+{
+	locale loc;
+	int gCount = 0;
+	bool isGood = false;
+	for (string::iterator it=str.begin(); it!=str.end(); ++it)
+	{
+		if (isalpha(*it,loc))
+			gCount++;
+	}
+	if (gCount == str.size())
+		isGood = true;
+	
+	return isGood;
+}
+
+bool checkForNum(string str)
+{
+	locale loc;
+	int gCount = 0;
+	bool isGood = false;
+	for (string::iterator it=str.begin(); it!=str.end(); ++it)
+	{
+		if (isdigit(*it,loc))
+			gCount++;
+	}
+	if (gCount == str.size())
+		isGood = true;
+	
+	return isGood;
+}
+
+bool checkForCode(string str)
+{
+	bool isMatch = false;
+	vector<string> codes = split_by_whitespace("PED GEN INT CAR SUR OBS PSY NEU ORT DET OPT ENT");	for (int i = 0; i < codes.size(); i++)	{		if (str == codes[i])			isMatch = true;	}	return isMatch;
 }

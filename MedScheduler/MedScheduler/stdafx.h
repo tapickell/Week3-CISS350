@@ -17,6 +17,7 @@
 #include <sstream>
 #include <vector>
 #include <array>
+#include <locale>
 
 
 // TODO: reference additional headers your program requires here
