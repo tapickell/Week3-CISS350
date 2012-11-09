@@ -7,13 +7,18 @@ class Room
 public:
 	Room(void);
 	~Room(void);
-	void useRoom();
+	void useRoom(std::string, std::string);
 	Queue leaveRoom();
 	bool roomInUse();
-	void addToQ(Queue);
+	void addPtoQ(Patient);
+	void addQtoQ(Queue);
+	std::string getDoc();
+	std::string getCode();
 
 private:
 	Queue roomQ;
 	bool inUse;
+	std::string docName;
+	std::string code;
 };
 

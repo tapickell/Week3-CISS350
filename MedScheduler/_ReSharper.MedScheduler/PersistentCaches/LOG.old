@@ -1,5 +1,5 @@
-2012/11/08-16:07:27.536 7b4 Recovering log #3
-2012/11/08-16:07:27.536 7b4 Level-0 table #5: started
-2012/11/08-16:07:27.601 7b4 Level-0 table #5: 5158 bytes OK
-2012/11/08-16:07:27.647 7b4 Delete type=0 #3
-2012/11/08-16:07:27.648 7b4 Delete type=3 #2
+2012/11/08-21:26:06.996 bf4 Recovering log #6
+2012/11/08-21:26:06.996 bf4 Level-0 table #8: started
+2012/11/08-21:26:07.295 bf4 Level-0 table #8: 4020 bytes OK
+2012/11/08-21:26:07.342 bf4 Delete type=0 #6
+2012/11/08-21:26:07.342 bf4 Delete type=3 #4

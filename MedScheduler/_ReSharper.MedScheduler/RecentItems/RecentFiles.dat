@@ -1,38 +1,40 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Patient.h" caret="346" fromTop="19" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Person.h" caret="179" fromTop="9" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:fileHandler.h" caret="1231" fromTop="49" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:fileHandler.cpp" caret="462" fromTop="12" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Person.cpp" caret="423" fromTop="36" />
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:InvalidEntryError.h" caret="188" fromTop="8" />
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Patient.cpp" caret="0" fromTop="0" />
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Queue.h" caret="212" fromTop="13" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:LinkedList.cpp" caret="3088" fromTop="36" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Queue.cpp" caret="580" fromTop="43" />
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Room.h" caret="148" fromTop="11" />
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Room.cpp" caret="385" fromTop="32" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:stdafx.h" caret="424" fromTop="19" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Doctor.h" caret="119" fromTop="7" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Doctor.cpp" caret="208" fromTop="14" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:LinkedList.h" caret="444" fromTop="19" />
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:MedScheduler.cpp" caret="2812" fromTop="32" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:InvalidEntryError.h" caret="0" fromTop="0" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:UnavailableRoomError.h" caret="201" fromTop="7" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Queue.h" caret="212" fromTop="13" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Room.cpp" caret="728" fromTop="49" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Patient.h" caret="352" fromTop="16" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Patient.cpp" caret="740" fromTop="40" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Room.h" caret="244" fromTop="14" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:MedScheduler.cpp" caret="7726" fromTop="24" />
   </RecentFiles>
   <RecentEdits>
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Patient.h" caret="346" fromTop="19" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:fileHandler.h" caret="1231" fromTop="49" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:fileHandler.cpp" caret="462" fromTop="0" />
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Patient.cpp" caret="0" fromTop="0" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Person.cpp" caret="423" fromTop="36" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:LinkedList.cpp" caret="0" fromTop="0" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:InvalidEntryError.h" caret="181" fromTop="7" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Queue.h" caret="212" fromTop="13" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Queue.cpp" caret="593" fromTop="45" />
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Room.cpp" caret="385" fromTop="32" />
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Room.h" caret="148" fromTop="11" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:stdafx.h" caret="424" fromTop="19" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Doctor.h" caret="119" fromTop="7" />
     <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Doctor.cpp" caret="208" fromTop="14" />
-    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:MedScheduler.cpp" caret="2810" fromTop="32" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:UnavailableRoomError.h" caret="173" fromTop="7" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Room.h" caret="244" fromTop="14" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Room.cpp" caret="728" fromTop="49" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Patient.h" caret="352" fromTop="16" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:Patient.cpp" caret="740" fromTop="40" />
+    <File id="F3BEA9E3-3949-444D-81A6-28EE27337C26/f:MedScheduler.cpp" caret="7725" fromTop="24" />
   </RecentEdits>
 </RecentFiles>
