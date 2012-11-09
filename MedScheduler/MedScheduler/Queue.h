@@ -10,6 +10,9 @@ public:
 	int size();
 	int pushQ(Patient);
 	Patient popQ();
+	void clearQ();
+	Patient operator[] (int);
+
 
 private:
 	LinkedList myQ;

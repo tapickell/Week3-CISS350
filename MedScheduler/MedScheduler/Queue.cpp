@@ -37,4 +37,11 @@ Patient Queue::popQ()
 		throw new std::string("The Queue is empty!");
 	}
 }
-
+void Queue::clearQ()
+{
+	myQ.clear();
+}
+Patient Queue::operator[] (int index)
+{
+	return myQ[index];
+}

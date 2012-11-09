@@ -1,0 +1,19 @@
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  |                                                                 |
+  |  Welcome to MedScheduler.                                       |
+  |                                                                 |
+  |  MedSchedluer is an automated clinic schedluing system.         |
+  |                                                                 |
+  |  Doctors and patients can be checked in and out.                |
+  |                                                                 |
+  |  If you would like more information about how to use this       |
+  |  program you can enter the help menu                            |
+  |  like this:   HELP  <enter>                                     |
+  |                                                                 |
+  |  You can also type a doctor or patient name into the            |
+  |  prompt for more information about that person.                 |
+  |  like this: Bob  <enter>                                        |
+  |                                                                 |
+  |                                                                 |
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
