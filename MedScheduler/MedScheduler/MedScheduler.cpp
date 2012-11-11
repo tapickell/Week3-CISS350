@@ -55,7 +55,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		try   //**********************    get input from user and process   **************************//
 		{
 			//prompt for input "D" or "P"
-			tout("Enter D for doctor or P for patient: ");
+			tout("Enter D for doctor or P for patient: "); //CHECK OK
 			string dorp;
 			getline(cin, dorp);
 			vector<string> dorpstore = split_by_whitespace(dorp);
@@ -64,7 +64,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				entry.push_back(dorpstore[0]);
 
 				//prompt for "I" or "O"
-				tout("Enter I for check-in or O for check-out: ");
+				tout("Enter I for check-in or O for check-out: "); //CHECK OK
 				string ioro;
 				getline(cin, ioro);
 				vector<string> iorostore = split_by_whitespace(ioro);
@@ -82,15 +82,17 @@ int _tmain(int argc, _TCHAR* argv[])
 							string docInfo;
 							vector<string> docInfoStack;
 							tout("Enter Doctor information:");
-							tout("doctor_name room_number medical_code");
+							tout("doctor_name room_number medical_code"); //CHECK OK
 							getline(cin, docInfo);
 							docInfoStack = split_by_whitespace(docInfo);
 							stringstream greet;
 							greet << "Attempting to login Doctor " << docInfoStack[0] << " " << docInfoStack[2];
+							tout(greet.str());
 							//input validation
 							if (checkForAlpha(docInfoStack[0]) && checkForNum(docInfoStack[1]) && checkForCode(docInfoStack[2]))
 							{
-								if (atoi(docInfoStack[1].c_str()) > 0 && atoi(docInfoStack[1].c_str()) < 101)
+								int num = atoi(docInfoStack[1].c_str());
+								if (num > 0 && num < 101)
 								{
 									//room number is array index +1
 									int x = atoi(docInfoStack[1].c_str());
@@ -108,7 +110,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 									} else {
 										//if room in use kickout msg
-										throw UnavailableRoomError();
+										throw UnavailableRoomError(); //throwing on good number #FIXED changed room constructor to set inUse to false
 									}
 								} else {
 									//else throw error
@@ -231,7 +233,7 @@ int _tmain(int argc, _TCHAR* argv[])
 									}
 									bool roomFound = false;
 									//check all rooms
-									for (size_t i = 0; i < sizeof(rooms); i++)
+									for (size_t i = 0; i < 100; i++)
 									{
 										//check for room with doc assigned
 										if (rooms[i].roomInUse())
@@ -325,7 +327,7 @@ int _tmain(int argc, _TCHAR* argv[])
 									for (size_t i = 0; i < sizeof(rooms); i++)
 									{
 										//if next in Q is same name as input
-										if (rooms[i].peek().getName() == patInfoStack[0])
+										if (rooms[i].peek().getName() == patInfoStack[0]) //ERROR signing out starting here. throws exception in linked list. b/c HEAD is NULL in list??? SCOPE Issue??
 										{
 											found = true;
 											temp = i;
@@ -370,7 +372,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		catch (runtime_error e)
 		{
 			errout(e.what());
-			break;
+			//break;
 		}
 	}
 

@@ -4,6 +4,7 @@
 
 Room::Room(void)
 {
+	inUse = false;
 }
 
 
@@ -32,6 +33,7 @@ Queue Room::leaveRoom()
 }
 bool Room::roomInUse()
 {
+	std::cout << "var inUse == "<< inUse << std::endl;
 	return inUse;
 }
 void Room::addPtoQ(Patient P)
