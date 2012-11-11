@@ -335,16 +335,20 @@ int _tmain(int argc, _TCHAR* argv[])
 									if (found)
 									{
 										//remove from doc Q
-										room[temp].popQ();
+										rooms[temp].popfromQ();
 										stringstream chkdout;
 										chkdout << "Patient " << patInfoStack[0] << " successfully checked out of room " << temp;
-										tout(chkdout);
+										tout(chkdout.str());
 
 									} else {
 
 										throw InvalidEntryError("Patient name not found."); //will this work from here???
 									}
-								}							
+								}
+								catch (InvalidEntryError e)
+								{
+									errout(e.what());
+								}
 							}
 						} else {
 							throw InvalidEntryError();

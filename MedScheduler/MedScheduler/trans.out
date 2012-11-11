@@ -1,0 +1,5 @@
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+That room is unavailable!

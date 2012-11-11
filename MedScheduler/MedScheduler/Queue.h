@@ -11,7 +11,7 @@ public:
 	int pushQ(Patient);
 	Patient popQ();
 	void clearQ();
-  Patient peek();
+	Patient peek();
 	Patient operator[] (int);
 
 
