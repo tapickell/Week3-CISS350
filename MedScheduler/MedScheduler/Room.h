@@ -16,11 +16,14 @@ public:
 	void addQtoQ(Queue);
 	std::string getDoc();
 	std::string getCode();
+	std::string getPatName();
+	void setPatName(std::string);
 
 private:
 	Queue roomQ;
 	bool inUse;
 	std::string docName;
 	std::string code;
+	std::string patName;
 };
 

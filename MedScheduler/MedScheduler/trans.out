@@ -122,3 +122,513 @@ Enter D for doctor or P for patient:
 Enter I for check-in or O for check-out: 
 Enter Patient Name:
 Attempting to logout Patient Mcfly
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 1
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+ERROR: Doctor Not Found!
+Patient Mcfly has been assigned to Doctor Brown in room 0
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 2
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+ERROR: Doctor Not Found!
+Patient Mcfly has been assigned to Doctor Brown in room 0
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 1
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+ERROR: Doctor Not Found!
+Patient Mcfly has been assigned to Doctor Brown in room 0
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 2
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+ERROR: Doctor Not Found!
+Patient Mcfly has been assigned to Doctor Brown in room 0
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Patient Mcfly successfully checked out of room 3
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor name: 
+Doctor Brown has been checked out and room 2
+Enter D for doctor or P for patient: 
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 4
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+ERROR: Doctor Not Found!
+Patient Mcfly has been assigned to Doctor Brown in room 0
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Patient Mcfly successfully checked out of room 5
+Enter D for doctor or P for patient: 
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+ERROR: Doctor Not Found!
+Patient Mcfly has been assigned to Doctor Brown in room 0
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Patient Mcfly successfully checked out of room 11
+Enter D for doctor or P for patient: 
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+ERROR: Doctor Brown Not Found!
+Patient Mcfly has been assigned to Doctor Brown in room 0
+Enter D for doctor or P for patient: 
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+ERROR: Doctor Brown Not Found! (index num: 0)
+Patient Mcfly has been assigned to Doctor Brown in room 0
+Enter D for doctor or P for patient: 
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+ERROR: Doctor Brown Not Found! (index num: 0)
+Patient Mcfly has been assigned to Doctor Brown in room 0
+Enter D for doctor or P for patient: 
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Patient Mcfly has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Patient Mcfly successfully checked out of room 11
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor name: 
+Doctor Brown has been checked out and room 12
+Enter D for doctor or P for patient: 
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Borwn PED
+Doctor Borwn has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Borwn
+Patient Mcfly has been assigned to Doctor Borwn in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Patient Mcfly successfully checked out of room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown PED
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Who GEN
+Doctor Who has been assigned to room number 18
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Yugota ENT
+Doctor Yugota has been assigned to room number 31
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor BrainSurgeon SUR
+Doctor BrainSurgeon has been assigned to room number 2
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Vagius OBS
+Doctor Vagius has been assigned to room number 26
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Toothy DET
+Doctor Toothy has been assigned to room number 89
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Patient Mcfly has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Patient Stanley has been assigned to Doctor BrainSurgeon in room 2
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Patient Yoda has been assigned to Doctor Toothy in room 89
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Patient Timmy has been assigned to Doctor Who in room 18
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Patient Icarus has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Patient Tomas has been assigned to Doctor Who in room 18
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Patient Madonna has been assigned to Doctor BrainSurgeon in room 2
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Patient Wolverine has been assigned to Doctor Toothy in room 89
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Patient Scott has been assigned to Doctor Who in room 18
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Patient Bobby has been assigned to Doctor Yugota in room 31
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Hank OPT
+That room is unavailable!
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Hank OPT
+Doctor Hank has been assigned to room number 32
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Hank
+Patient Warren has been assigned to Doctor Hank in room 32
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Hank
+Patient Jean has been assigned to Doctor Who in room 18
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Hank
+Patient Lorna has been assigned to Doctor Vagius in room 26
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Yugota
+BrainSurgeon
+Vagius
+Toothy
+Hank
+Patient Alexander has been assigned to Doctor Who in room 18
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Patient Mcfly has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Hank PED
+Doctor Hank has been assigned to room number 2
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Hank
+Patient Logan has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Hank
+Patient Bobby has been assigned to Doctor Hank in room 2
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Hank
+Patient Icarus has been assigned to Doctor Hank in room 2
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Hank
+Patient Scott has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Patient Mcfly successfully checked out of room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Logan
+Patient Logan successfully checked out of room 12
+Enter D for doctor or P for patient: 
+ERROR: P' is not a valid input.
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Bobby
+Patient Bobby successfully checked out of room 2
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor name: 
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Who PED
+Doctor Who has been assigned to room number 1
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Mcfly has been assigned to Doctor Who in room 1
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Icarus has been assigned to Doctor Who in room 1
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Timmy has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Stanley has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor name: 
+relocating remaining patients to other waiting rooms...
+Enter D for doctor or P for patient: 

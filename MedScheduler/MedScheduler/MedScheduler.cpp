@@ -19,7 +19,7 @@ vector<string> split_by_whitespace(string);
 bool checkForAlpha(string);
 bool checkForNum(string);
 bool checkForCode(string);
-int findDocByName(string, vector<Doctor>);
+int findDocByName(string, vector<Doctor>&);
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -91,20 +91,22 @@ int _tmain(int argc, _TCHAR* argv[])
 							//input validation
 							if (checkForAlpha(docInfoStack[0]) && checkForNum(docInfoStack[1]) && checkForCode(docInfoStack[2]))
 							{
-								int num = atoi(docInfoStack[1].c_str());
+								 //*********   room number    ***********//
+								int num = atoi(docInfoStack[1].c_str()); 
 								if (num > 0 && num < 101)
-								{
-									//room number is array index +1
-									int x = atoi(docInfoStack[1].c_str());
+								{					
+									//**********   index number   ************//
+									int dex = atoi(docInfoStack[1].c_str()) - 1;  
 									//check if room is free
-									if (!rooms[x+1].roomInUse())
+									if (!rooms[dex].roomInUse())//index number
 									{
 										//assign room to doctor
-										rooms[x+1].useRoom(docInfoStack[0], docInfoStack[2]);//add doc name and code to room
+										rooms[dex].useRoom(docInfoStack[0], docInfoStack[2]);//add doc name and code to room
 										//check doc in / add to list
-										DocsIn.push_back(Doctor(docInfoStack[0], x, docInfoStack[2]));
+										Doctor tempDoc = Doctor(docInfoStack[0], num, docInfoStack[2]);
+										DocsIn.push_back(tempDoc);
 										stringstream assign;
-										assign << "Doctor " << docInfoStack[0] << " has been assigned to room number " << docInfoStack[1];
+										assign << "Doctor " << tempDoc.getName() << " has been assigned to room number " << tempDoc.getRoom();
 										tout(assign.str());
 		//doc has been added *********************************  DO   MORE  FROM HERE  ONCE DOC  IS  ASSIGNED  !!!!   **************************************//
 
@@ -233,7 +235,7 @@ int _tmain(int argc, _TCHAR* argv[])
 									}
 									bool roomFound = false;
 									//check all rooms
-									for (size_t i = 0; i < 100; i++)
+									for (size_t i = 0; i < 101; i++)
 									{
 										//check for room with doc assigned
 										if (rooms[i].roomInUse())
@@ -243,16 +245,20 @@ int _tmain(int argc, _TCHAR* argv[])
 											{
 												patIn = Patient(patInfoStack[0], y, patInfoStack[2], patInfoStack[3]);
 												patIn.setDoc(rooms[i].getDoc());
-												patIn.setRoomNum(findDocByName(rooms[i].getDoc(), DocsIn));///get room number ?!?!?!
-												rooms[i].addPtoQ(patIn);
+												int docIndex = findDocByName(rooms[i].getDoc(), DocsIn);
+												int docRoom = DocsIn[docIndex].getRoom();
+												patIn.setRoomNum(docRoom);///get room number ?!?!?!
+												cout << "PatientRoom: " << patIn.getRoomNum() << endl;
+												rooms[docRoom - 1].addPtoQ(patIn);//index is room - 1
 												roomFound = true;
+												break;
 											}
 										}
 									}
 									if (!roomFound)
 									{
 										//if room wasn't found matching patients needed code
-										for (size_t i = 0; i < sizeof(rooms); i++)
+										for (size_t i = 0; i < 101; i++)
 										{
 											//check for room with doc assigned
 											if (rooms[i].roomInUse())
@@ -262,9 +268,13 @@ int _tmain(int argc, _TCHAR* argv[])
 													//add to gen pract Q
 												patIn = Patient(patInfoStack[0], y, patInfoStack[2], patInfoStack[3]);
 												patIn.setDoc(rooms[i].getDoc());
-												patIn.setRoomNum(findDocByName(rooms[i].getDoc(), DocsIn));///get room number ?!?!?!
-												rooms[i].addPtoQ(patIn);
+												int docIndex = findDocByName(rooms[i].getDoc(), DocsIn);
+												int docRoom = DocsIn[docIndex].getRoom();
+												patIn.setRoomNum(docRoom);///get room number ?!?!?!
+												cout << "PatientRoom: " << patIn.getRoomNum() << endl;
+												rooms[docRoom - 1].addPtoQ(patIn);
 												roomFound = true;
+												break;
 												}												
 											}
 										}
@@ -272,7 +282,7 @@ int _tmain(int argc, _TCHAR* argv[])
 									if (!roomFound)
 									{
 										//if room wasn't found matching patients needed code
-										for (size_t i = 0; i < sizeof(rooms); i++)
+										for (size_t i = 0; i < 101; i++)
 										{
 											//check for room with doc assigned
 											if (rooms[i].roomInUse())
@@ -280,9 +290,13 @@ int _tmain(int argc, _TCHAR* argv[])
 												//add to any room with assigned doctor
 												patIn = Patient(patInfoStack[0], y, patInfoStack[2], patInfoStack[3]);
 												patIn.setDoc(rooms[i].getDoc());
-												patIn.setRoomNum(findDocByName(rooms[i].getDoc(), DocsIn));///get room number ?!?!?!
-												rooms[i].addPtoQ(patIn);
+												int docIndex = findDocByName(rooms[i].getDoc(), DocsIn);
+												int docRoom = DocsIn[docIndex].getRoom();
+												patIn.setRoomNum(docRoom);///get room number ?!?!?!
+												cout << "PatientRoom: " << patIn.getRoomNum() << endl;
+												rooms[docRoom - 1].addPtoQ(patIn);
 												roomFound = true;
+												break;
 											}
 										}
 									}
@@ -326,20 +340,22 @@ int _tmain(int argc, _TCHAR* argv[])
 									//search all rooms for next patient in each Q
 									for (size_t i = 0; i < sizeof(rooms); i++)
 									{
+										//cout << rooms[i].getPatName() << endl;
 										//if next in Q is same name as input
-										if (rooms[i].peek().getName() == patInfoStack[0]) //ERROR signing out starting here. throws exception in linked list. b/c HEAD is NULL in list??? SCOPE Issue??
+										if (rooms[i].getPatName() == patInfoStack[0]) //ERROR signing out starting here. throws exception in linked list. b/c HEAD is NULL in list??? SCOPE Issue??
 										{
 											found = true;
 											temp = i;
+											break;
 											//may need break or something to stop search
 										}
 									}
 									if (found)
 									{
 										//remove from doc Q
-										rooms[temp].popfromQ();
+										rooms[temp].popfromQ();//index number
 										stringstream chkdout;
-										chkdout << "Patient " << patInfoStack[0] << " successfully checked out of room " << temp;
+										chkdout << "Patient " << patInfoStack[0] << " successfully checked out of room " << temp + 1; //room num (index + 1)
 										tout(chkdout.str());
 
 									} else {
@@ -471,20 +487,24 @@ bool checkForCode(string str)
 	return isMatch;
 }
 
-int findDocByName(string str, vector<Doctor> DocsIn)
+int findDocByName(string str, vector<Doctor> &DocsIn)
 {
 	bool isFound = false;
 	int doc = -1;
 	for (size_t i = 0; i < DocsIn.size(); i++)
 	{
+		tout(DocsIn[i].getName());
 		if (DocsIn[i].getName() == str)
 		{
 			doc = i;
+			isFound = true;
 		}
 	}
 	if (!isFound) //if not found kickout error
 	{
-		errout("ERROR: Doctor Not Found!");
+		stringstream strm;
+		strm << "ERROR: Doctor " << str <<" Not Found! (index num: " << doc << ")";
+		errout(strm.str());//getting this error on good doc
 	}
 	return doc;
 }
@@ -498,6 +518,7 @@ int findPatientByName(string str, vector<Doctor> DocsIn)
 		if (DocsIn[i].getName() == str)
 		{
 			doc = i;
+			isFound = true;
 		}
 	}
 	if (!isFound) //if not found kickout error

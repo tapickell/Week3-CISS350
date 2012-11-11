@@ -8,3 +8,14 @@ That room is unavailable!
 That room is unavailable!
 ERROR: Doctor Not Found!
 ERROR: Doctor Not Found!
+ERROR: Doctor Not Found!
+ERROR: Doctor Not Found!
+ERROR: Doctor Not Found!
+ERROR: Doctor Not Found!
+ERROR: Doctor Not Found!
+ERROR: Doctor Not Found!
+ERROR: Doctor Brown Not Found!
+ERROR: Doctor Brown Not Found! (index num: 0)
+ERROR: Doctor Brown Not Found! (index num: 0)
+That room is unavailable!
+ERROR: P' is not a valid input.

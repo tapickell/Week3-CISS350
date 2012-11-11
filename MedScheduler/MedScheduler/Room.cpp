@@ -5,6 +5,7 @@
 Room::Room(void)
 {
 	inUse = false;
+	patName = " ";
 }
 
 
@@ -26,19 +27,24 @@ Queue Room::leaveRoom()
 	if (!roomQ.isEmpty())
 	{
 		//move remaining patients in Q to other doctors Q
-		temp = roomQ;
-		roomQ.clearQ();
+		for (size_t i = 0; i < roomQ.size(); i++)
+		{
+			temp.pushQ(roomQ[0]);
+			roomQ.popQ();
+		}
 	}
 	return temp;
 }
 bool Room::roomInUse()
 {
-	std::cout << "var inUse == "<< inUse << std::endl;
+	//std::cout << "var inUse == "<< inUse << std::endl;
 	return inUse;
 }
 void Room::addPtoQ(Patient P)
 {
+	patName = P.getName();
 	roomQ.pushQ(P);
+	patName = roomQ[0].getName();
 }
 void Room::addQtoQ(Queue theQ) // this could allow to dump one Q into another
 {
@@ -55,7 +61,14 @@ std::string Room::getCode()
 {
 	return code;
 }
-
+std::string Room::getPatName()
+{
+	return patName;
+}
+void Room::setPatName(std::string str)
+{
+	patName = str;
+}
 Patient Room::peek()
 {
 	return roomQ.peek();
@@ -64,4 +77,5 @@ Patient Room::peek()
 void Room::popfromQ()
 {
 	roomQ.popQ();
+	patName = roomQ[0].getName();
 }
