@@ -11,6 +11,7 @@ public:
 	Queue leaveRoom();
 	bool roomInUse();
 	void addPtoQ(Patient);
+	int getProomNum(std::string);
 	void addQtoQ(Queue);
 	std::string getDoc();
 	std::string getCode();

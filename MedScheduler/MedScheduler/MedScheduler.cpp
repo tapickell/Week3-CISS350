@@ -102,7 +102,7 @@ int _tmain(int argc, _TCHAR* argv[])
 										//check doc in / add to list
 										DocsIn.push_back(Doctor(docInfoStack[0], x, docInfoStack[2]));
 										stringstream assign;
-										assign << "Doctor " << docInfoStack[0] << " has been assignd to room number " << docInfoStack[1];
+										assign << "Doctor " << docInfoStack[0] << " has been assigned to room number " << docInfoStack[1];
 										tout(assign.str());
 		//doc has been added *********************************  DO   MORE  FROM HERE  ONCE DOC  IS  ASSIGNED  !!!!   **************************************//
 
@@ -164,7 +164,7 @@ int _tmain(int argc, _TCHAR* argv[])
 												//check for room with doc assigned
 												if (r.roomInUse())
 												{
-													//check doc code for match or doc code for general practctioner
+													//check doc code for match or doc code for general practitioner
 													if (r.getCode() == tempQ[0].getCode() || r.getCode() == "GEN")
 													{
 														r.addPtoQ(tempQ.popQ());
@@ -202,7 +202,7 @@ int _tmain(int argc, _TCHAR* argv[])
 					} else if (entry[0] == pat) //if "P"
 					{
 						//if "I"
-						if (entry[1] == in)
+						if (entry[1] == in) //check in patient **************************************
 						{
 							//prompt for name, age, code, emergency.
 							//set doc
@@ -236,7 +236,7 @@ int _tmain(int argc, _TCHAR* argv[])
 										//check for room with doc assigned
 										if (rooms[i].roomInUse())
 										{
-											//check doc code for match or doc code for general practctioner
+											//check doc code for match or doc code for general practitioner
 											if (rooms[i].getCode() == patInfoStack[2])
 											{
 												patIn = Patient(patInfoStack[0], y, patInfoStack[2], patInfoStack[3]);
@@ -302,7 +302,7 @@ int _tmain(int argc, _TCHAR* argv[])
 								throw InvalidEntryError("Please enter valid data");
 							}
 
-						} else if (entry[1] == out) //if "O"
+						} else if (entry[1] == out) //if "O"    check out patient *************************************
 						{
 							//prompt for name
 							string patInfo;
@@ -313,7 +313,39 @@ int _tmain(int argc, _TCHAR* argv[])
 							stringstream goodbye;
 							goodbye << "Attempting to logout Patient " << patInfoStack[0];
 							tout(goodbye.str());
-							//remove from doc Q
+							//verify input
+							if (checkForAlpha(patInfoStack[0]))
+							{
+								//find patient
+								try
+								{
+									bool found = false;
+									int temp;
+									//search all rooms for next patient in each Q
+									for (size_t i = 0; i < sizeof(rooms); i++)
+									{
+										//if next in Q is same name as input
+										if (rooms[i].peek().getName() == patInfoStack[0])
+										{
+											found = true;
+											temp = i;
+											//may need break or something to stop search
+										}
+									}
+									if (found)
+									{
+										//remove from doc Q
+										room[temp].popQ();
+										stringstream chkdout;
+										chkdout << "Patient " << patInfoStack[0] << " successfully checked out of room " << temp;
+										tout(chkdout);
+
+									} else {
+
+										throw InvalidEntryError("Patient name not found."); //will this work from here???
+									}
+								}							
+							}
 						} else {
 							throw InvalidEntryError();
 						}

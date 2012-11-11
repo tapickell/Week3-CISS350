@@ -37,6 +37,10 @@ Patient Queue::popQ()
 		throw new std::string("The Queue is empty!");
 	}
 }
+Patient Queue::peek()
+{
+	return myQ[0];
+}
 void Queue::clearQ()
 {
 	myQ.clear();
