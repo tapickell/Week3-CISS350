@@ -49,3 +49,7 @@ Patient Queue::operator[] (int index)
 {
 	return myQ[index];
 }
+Patient Queue::getAt(int index)
+{
+	return myQ[index];
+}

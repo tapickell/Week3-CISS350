@@ -19,3 +19,12 @@ ERROR: Doctor Brown Not Found! (index num: 0)
 ERROR: Doctor Brown Not Found! (index num: 0)
 That room is unavailable!
 ERROR: P' is not a valid input.
+ERROR: Stanley is not a valid input.
+Doctor Information requires 3 inputs
+Doctor Information requires 3 inputs
+Doctor Information requires 3 inputs
+ERROR: P' is not a valid input.
+Doctor Information requires 3 inputs
+Doctor name not found
+ERROR: I' is not a valid input.
+Doctor Information requires 3 inputs

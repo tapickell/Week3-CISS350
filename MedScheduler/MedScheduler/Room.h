@@ -10,6 +10,7 @@ public:
 	void useRoom(std::string, std::string);
 	Queue leaveRoom();
 	bool roomInUse();
+	bool QisEmpty();
 	void addPtoQ(Patient);
 	void popfromQ();
 	Patient peek();

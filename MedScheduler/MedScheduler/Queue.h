@@ -13,6 +13,7 @@ public:
 	void clearQ();
 	Patient peek();
 	Patient operator[] (int);
+	Patient getAt(int);
 
 
 private:

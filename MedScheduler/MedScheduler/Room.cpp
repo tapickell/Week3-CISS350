@@ -40,11 +40,14 @@ bool Room::roomInUse()
 	//std::cout << "var inUse == "<< inUse << std::endl;
 	return inUse;
 }
+bool Room::QisEmpty()
+{
+	return roomQ.isEmpty();
+}
 void Room::addPtoQ(Patient P)
 {
 	patName = P.getName();
 	roomQ.pushQ(P);
-	patName = roomQ[0].getName();
 }
 void Room::addQtoQ(Queue theQ) // this could allow to dump one Q into another
 {
@@ -77,5 +80,8 @@ Patient Room::peek()
 void Room::popfromQ()
 {
 	roomQ.popQ();
-	patName = roomQ[0].getName();
+	if (!roomQ.isEmpty())
+	{
+		patName = roomQ[0].getName();
+	}
 }

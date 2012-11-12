@@ -632,3 +632,277 @@ Enter I for check-in or O for check-out:
 Enter Doctor name: 
 relocating remaining patients to other waiting rooms...
 Enter D for doctor or P for patient: 
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Who PED
+Doctor Who has been assigned to room number 1
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient mcfly has been assigned to Doctor Who in room 1
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Icarus has been assigned to Doctor Who in room 1
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Timmy has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+ERROR: Stanley is not a valid input.
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Who ENT
+Doctor Who has been assigned to room number 20
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Mcfly has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Timmy has been assigned to Doctor Who in room 20
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor name: 
+relocating remaining patients to other waiting rooms...
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Doctor Information requires 3 inputs
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Who GEN
+Doctor Who has been assigned to room number 3
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Doctor Information requires 3 inputs
+Enter D for doctor or P for patient: 
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Who GEN
+Doctor Who has been assigned to room number 3
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Patient Mcfly has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Who GEN
+Doctor Who has been assigned to room number 3
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Stanley has been assigned to Doctor Who in room 3
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Patient Mcfly has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Doctor Information requires 3 inputs
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Patient Mcfly has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+ERROR: P' is not a valid input.
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient Name:
+Attempting to logout Patient Mcfly
+Patient Mcfly successfully checked out of room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Who OPT
+Doctor Who has been assigned to room number 3
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Doctor Information requires 3 inputs
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor name: 
+Doctor name not found
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Patient Mcfly has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Who OPT
+Doctor Who has been assigned to room number 3
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Snoopy has been assigned to Doctor Who in room 3
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor name: 
+relocating remaining patients to other waiting rooms...
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+ERROR: I' is not a valid input.
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Brown GEN
+Doctor Brown has been assigned to room number 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Patient Mcfly has been assigned to Doctor Brown in room 12
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Attempting to login Doctor Who OPT
+Doctor Who has been assigned to room number 3
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Patient information:
+patient_name age medical_code emergency
+Brown
+Who
+Patient Snoopy has been assigned to Doctor Who in room 3
+Enter D for doctor or P for patient: 
+Enter I for check-in or O for check-out: 
+Enter Doctor name: 
+relocating remaining patients to other waiting rooms...
+Enter D for doctor, P for patient or Q for quit: 
+Enter I for check-in or O for check-out: 
+Enter Doctor information:
+doctor_name room_number medical_code
+Doctor Information requires 3 inputs
+Enter D for doctor, P for patient or Q for quit: 
+Thank you for using MedScheduler.
